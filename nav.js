@@ -198,29 +198,29 @@ define(["jquery"], function ($) {
     });
   }
 
+    //顶部导航添加移入移出效果
+    function topNavTab(){
 
-      //顶部导航添加移入移出效果
-      function topNavTab(){
-
-        $(".header-nav .nav-list").on("mouseenter", ".nav-item", function(){
-            $(this).addClass("nav-item-active");
-            var index = $(this).index() - 1;
-            if(index >= 0 && index <= 6){
-                $("#J_navMenu").css({display: "block"}).removeClass("slide-up").addClass("slide-down");
-                $("#J_navMenu .container").find("ul").eq(index).css("display", 'block').siblings("ul").css("display", "none");                ;
-            }
-        })
-        $("side-header").on("mouseleave", ".nav-item", function(){
-            $(this).removeClass("nav-item-active");
-        })
+      $(".header-nav .nav-list").on("mouseenter", ".nav-item", function(){
+          $(this).addClass("nav-item-active");
+          var index = $(this).index() - 1;
+          if(index >= 0 && index <= 6){
+              $("#J_navMenu").css({display: "block"}).removeClass("slide-up").addClass("slide-down");
+              $("#J_navMenu .container").find("ul").eq(index).css("display", 'block').siblings("ul").css("display", "none");                ;
+          }
+      })
+      $(".site-header").on("mouseleave", ".nav-item", function(){
+          $(this).removeClass("nav-item-active");
+      })
 
 
-        //移出的时候取消下拉菜单
-        $("side-header").mouseleave(function(){
-            $("#J_navMenu").css({display: "block"}).removeClass("slide-down").addClass("slide-up");
-        })
+      //移出的时候取消下拉菜单
+      $(".site-header").mouseleave(function(){
+          $("#J_navMenu").css({display: "block"}).removeClass("slide-down").addClass("slide-up");
+      })
 
-    }
+  }
+
 
 
 
