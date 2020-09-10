@@ -20,4 +20,7 @@ require(["nav"], function(nav){
   nav.banner();
   nav.leftNavDownload();
   nav.leftNavTab();
+  nav.topNavDownload();
+  nav.topNavTab();
+
 })
