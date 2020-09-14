@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/base.css"/>
         <link rel="stylesheet" href="css/cart.css"/>
-        <script src = 'js/require.js' defer async = 'true' data-main = 'js/cart.js'></script>
+        <script src = "js/require.js" defer async = "true" data-main = "js/cart.js"></script>
     </head>
     <body>
         <!-- 顶部标题 -->
@@ -25,16 +25,16 @@
             </div>
         </div>
         <!-- 购物车列表 -->
-        <div class = 'page-main'>
-            <div class = 'container'>
+        <div class = "page-main">
+            <div class = "container">
                 <div class="cart-empty cart-empty-nologin hide" id="J_cartEmpty">
                     <h2>您的购物车还是空的！</h2>
                     <p class="login-desc">登录后将显示您之前加入的商品</p>
                     <a href="javascript:void(0);" class="btn btn-primary btn-login" id="J_loginBtn" data-href="//order.mi.com/site/login?redirectUrl=https://static.mi.com/cart/" data-stat-id="2708415ff4adafd3" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-2708415ff4adafd3', 'javascript:void0', 'pcpid', '']);">立即登录</a>
                     <a href="//list.mi.com/0" class="btn btn-primary btn-shoping J_goShoping" data-stat-id="498eb13e3ab3f287" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-498eb13e3ab3f287', '//list.mi.com/0', 'pcpid', '']);">马上去购物</a>
                 </div>
-                <div id = 'J_cartBox'>
-                        <div class = 'cart-goods-list'>
+                <div id = "J_cartBox">
+                        <div class = "cart-goods-list">
                                 <!-- 列表头 -->
                                 <div class="list-head clearfix">
                                     <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">√</i>全选</div>
@@ -46,49 +46,49 @@
                                     <div class="col col-action">操作</div>
                                 </div>
                                 <!-- 列表 -->
-                                <div class = 'list-body' id = 'J_cartListBody'>
-                                    <div class = 'item-box'>
-                                        <div class="item-table J_cartGoods" data-info="{ commodity_id:'1192300048', gettype:'buy', itemid:'2192300031_0_buy', num:'1'} ">  
-                                                <!-- <div class="item-row clearfix"> 
-                                                    <div class="col col-check">  
-                                                        <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox" data-itemid="2192300031_0_buy" data-status="1">√</i>  
-                                                    </div> 
-                                                    <div class="col col-img">  
-                                                        <a href="//item.mi.com/1192300048.html" target="_blank"> 
-                                                            <img alt="" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1560134059.75078528.jpg?thumb=1&amp;w=80&amp;h=80" width="80" height="80"> 
-                                                        </a>  
-                                                    </div> 
-                                                    <div class="col col-name">  
-                                                        <div class="tags">   
-                                                        </div>     
-                                                        <div class="tags">  
-                                                        </div>   
-                                                        <h3 class="name">  
-                                                            <a href="//item.mi.com/1192300048.html" target="_blank"> 
-                                                                小米手环3 / 4 腕带 藕荷粉 
-                                                            </a>  
-                                                        </h3>        
-                                                    </div> 
-                                                    <div class="col col-price"> 
-                                                        19.9元 
-                                                        <p class="pre-info">  </p> 
-                                                    </div> 
-                                                    <div class="col col-num">  
-                                                        <div class="change-goods-num clearfix J_changeGoodsNum"> 
+                                <div class = "list-body" id = "J_cartListBody">
+                                    <div class = "item-box">
+                                        <div class="item-table J_cartGoods" data-info="{ commodity_id:'1192300048', gettype:'buy', itemid:'2192300031_0_buy', num:'1'} ">
+                                                <!-- <div class="item-row clearfix">
+                                                    <div class="col col-check">
+                                                        <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox" data-itemid="2192300031_0_buy" data-status="1">√</i>
+                                                    </div>
+                                                    <div class="col col-img">
+                                                        <a href="//item.mi.com/1192300048.html" target="_blank">
+                                                            <img alt="" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1560134059.75078528.jpg?thumb=1&amp;w=80&amp;h=80" width="80" height="80">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col col-name">
+                                                        <div class="tags">
+                                                        </div>
+                                                        <div class="tags">
+                                                        </div>
+                                                        <h3 class="name">
+                                                            <a href="//item.mi.com/1192300048.html" target="_blank">
+                                                                小米手环3 / 4 腕带 藕荷粉
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="col col-price">
+                                                        19.9元
+                                                        <p class="pre-info">  </p>
+                                                    </div>
+                                                    <div class="col col-num">
+                                                        <div class="change-goods-num clearfix J_changeGoodsNum">
                                                             <a href="javascript:void(0)" class="J_minus">
                                                                 <i class="iconfont"></i>
-                                                            </a> 
-                                                            <input tyep="text" name="2192300031_0_buy" value="1" data-num="1" data-buylimit="20" autocomplete="off" class="goods-num J_goodsNum" "=""> 
-                                                            <a href="javascript:void(0)" class="J_plus"><i class="iconfont"></i></a>   
-                                                        </div>  
-                                                    </div> 
-                                                    <div class="col col-total"> 
-                                                        19.9元 
-                                                        <p class="pre-info">  </p> 
-                                                    </div> 
-                                                    <div class="col col-action"> 
-                                                        <a id="2192300031_0_buy" data-msg="确定删除吗？" href="javascript:void(0);" title="删除" class="del J_delGoods"><i class="iconfont"></i></a> 
-                                                    </div> 
+                                                            </a>
+                                                            <input tyep="text" name="2192300031_0_buy" value="1" data-num="1" data-buylimit="20" autocomplete="off" class="goods-num J_goodsNum" "="">
+                                                            <a href="javascript:void(0)" class="J_plus"><i class="iconfont"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-total">
+                                                        19.9元
+                                                        <p class="pre-info">  </p>
+                                                    </div>
+                                                    <div class="col col-action">
+                                                        <a id="2192300031_0_buy" data-msg="确定删除吗？" href="javascript:void(0);" title="删除" class="del J_delGoods"><i class="iconfont"></i></a>
+                                                    </div>
                                                 </div>  -->
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@
                                         合计：<em id="J_cartTotalPrice">1896.9</em>元
                                     </span>
                                     <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout" data-stat-id="9bd56b7232f4ef1a" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-9bd56b7232f4ef1a', 'javascript:void0', 'pcpid', '']);">去结算</a>
-                    
+
                                     <div class="no-select-tip hide" id="J_noSelectTip">
                                         请勾选需要结算的商品
                                         <i class="arrow arrow-a"></i>
@@ -118,44 +118,44 @@
                                     </div>
                             </div>
                 </div>
-                <div class = 'cart-recommend container' id = 'J_miRecommendBox'>
-                    <h2 class = 'xm-recommend-title'>
+                <div class = "cart-recommend container" id = "J_miRecommendBox">
+                    <h2 class = "xm-recommend-title">
                         <span>买购物车中商品的人还买了</span>
                     </h2>
-                    <div class = 'xm-recommend'>
-                        <ul class = 'row clearfix'>
-                                <!-- <li class="J_xm-recommend-list span4">    
-                                    <dl> 
-                                        <dt> 
-                                            <a href="//item.mi.com/1181300007.html"> 
-                                                <img src="//i1.mifile.cn/a1/pms_1551867177.2478190!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1551867177.2478190!280x280.jpg  2x" alt="小米净水器1A（厨下式）"> 
-                                            </a> 
-                                        </dt> 
-                                        <dd class="xm-recommend-name"> 
-                                            <a href="//item.mi.com/1181300007.html"> 
-                                                小米净水器1A（厨下式） 
-                                            </a> 
-                                        </dd> 
-                                        <dd class="xm-recommend-price">1399元</dd> 
-                                        <dd class="xm-recommend-tips">   4182人好评    
-                                            <a href="//item.mi.com/cart/add/2181300007-0-1" style="display: none;">加入购物车</a>  
-                                        </dd> 
+                    <div class = "xm-recommend">
+                        <ul class = "row clearfix">
+                                <!-- <li class="J_xm-recommend-list span4">
+                                    <dl>
+                                        <dt>
+                                            <a href="//item.mi.com/1181300007.html">
+                                                <img src="//i1.mifile.cn/a1/pms_1551867177.2478190!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1551867177.2478190!280x280.jpg  2x" alt="小米净水器1A（厨下式）">
+                                            </a>
+                                        </dt>
+                                        <dd class="xm-recommend-name">
+                                            <a href="//item.mi.com/1181300007.html">
+                                                小米净水器1A（厨下式）
+                                            </a>
+                                        </dd>
+                                        <dd class="xm-recommend-price">1399元</dd>
+                                        <dd class="xm-recommend-tips">   4182人好评
+                                            <a href="//item.mi.com/cart/add/2181300007-0-1" style="display: none;">加入购物车</a>
+                                        </dd>
                                         <dd class="xm-recommend-notice">
 
-                                        </dd> 
-                                    </dl>  
+                                        </dd>
+                                    </dl>
                                 </li> -->
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <!-- 购物车后续商品列表 -->
-        
+
         <tool-bar :bar-data="toolBarData"></tool-bar>
 
-        <div ref="J_siteFooter">
+        <!-- <div ref="J_siteFooter"> -->
         <div class="site-footer">
         <div class="container">
             <div class="footer-service">
@@ -247,7 +247,7 @@
                     <a rel="nofollow" href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/ded8d0e4a77d.html"   target="_blank">小米商城隐私政策</a>
                     <span class="sep">|</span>
                     <a rel="nofollow" href="//www.mi.com/about/user-agreement/"   target="_blank">小米商城用户协议</a>
-                
+
 
                     <span class="sep">|</span>
                     <a rel="nofollow" href="//static.mi.com/feedback/"   target="_blank">问题反馈</a>
@@ -274,7 +274,7 @@
                     <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png" target="_blank">增值电信业务许可证</a>&nbsp;
                     网络食品经营备案（京）【2018】WLSPJYBAHF-12  &nbsp;
                     <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png" target="_blank">食品经营许可证</a>
-                    <br>违法和不良信息举报电话：185-0130-1238 <a href= 'https://www.mi.com/static/intellectual/index.html' target="_blank">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    <br>违法和不良信息举报电话：185-0130-1238 <a href= "https://www.mi.com/static/intellectual/index.html" target="_blank">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
                 </p>
             </div>
             <div class="info-links">

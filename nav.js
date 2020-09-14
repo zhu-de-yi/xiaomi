@@ -221,6 +221,27 @@ define(["jquery"], function ($) {
 
   }
 
+  //搜索框
+  function searchTab(){
+    $("#search").focus(function () {
+      $("#J_keywordList").removeClass("hide").addClass("show");
+    }).blur(function(){
+      $("#J_keywordList").removeClass("show").addClass("hide");
+    })
+  }
+  //
+  function allGoodsTab(){
+    $(".header-nav .nav-list").on("mouseenter", ".nav-category", function(){
+        $(this).addClass("nav-category-active");
+        $(this).find(".site-category").css("display", 'block');
+    })
+
+    $(".header-nav .nav-list").on("mouseleave", ".nav-category", function(){
+        $(this).removeClass("nav-category-active");
+        $(this).find(".site-category").css("display", 'none');
+    })
+}
+
 
 
 
@@ -231,5 +252,7 @@ define(["jquery"], function ($) {
     leftNavTab: leftNavTab, //侧边导航栏添加移入移出效果
     topNavDownload:topNavDownload,//下载顶部导航数据
     topNavTab:topNavTab,//顶部导航添加移入移出效果
+    searchTab: searchTab,//搜索功能
+    allGoodsTab: allGoodsTab,
   };
 });
