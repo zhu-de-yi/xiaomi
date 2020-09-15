@@ -2171,7 +2171,6 @@ textarea.input-text {
   width: 57px;
   height: 57px;
   margin-right: 10px;
-  background: url(../i/logo-footer.png?v2) no-repeat 50% 50%;
   position: absolute;
   top: 0;
   left: 0; }
@@ -2211,8 +2210,7 @@ textarea.input-text {
   clear: both;
   margin: 30px auto 0;
   width: 267px;
-  height: 19px;
-  background: url(../i/slogan2016.png) no-repeat center 0; }
+  height: 19px; }
 
 .site-mini-header {
   font-size: 12px;
